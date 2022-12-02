@@ -24,8 +24,6 @@ fn main() {
   }
   elf_vec.sort();
   
-
-
   println!("Part 1 {:?}", elf_vec.last().unwrap());
   println!("Part 2 {:?}", elf_vec.windows(3).last().iter().fold(0, |acc, x| acc + x[0] + x[1] + x[2]));
 }
