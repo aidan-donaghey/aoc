@@ -45,7 +45,7 @@ fn load_pairs() -> Vec<(Vec<u16>, Vec<u16>)> {
         let line = line.unwrap();
         // Feel like I can do the following 3 lines as a map
         let parts = line.split(",").collect::<Vec<&str>>();
-        let pair_1: Vec<u16>= parts[0].split("-").map(|x| x.parse::<u16>().unwrap()).collect();
+        let pair_1: Vec<u16>=   parts[0].split("-").map(|x| x.parse::<u16>().unwrap()).collect();
         let pair_2: Vec<u16> = parts[1].split("-").map(|x| x.parse::<u16>().unwrap()).collect();
         pairs.push((pair_1, pair_2));
     }
